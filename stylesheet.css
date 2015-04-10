@@ -18,30 +18,47 @@ body {
     margin: 20px 0 20px 0;
 }
 
-#menu ul {
+#menu li {
     list-style-type: none;
-}
-
-#menu ul li {
     display: inline-block;
 }
 
-#menu ul li a {
+#menu li a {
+    display: inline-block;
     text-decoration: none;
     color:#ffffff;
     background-color:rgb(74, 74, 74);
-    margin:0px 4px 4px 4px;
+    
     padding:4px;
 }
 
-#menu ul li a:hover {
+#menu li a:hover {
     background-color:#a1a1a1;
+}
+
+.subMenu {
+    position:absolute;
+    padding: 0;
+    visibility: hidden;
+}
+
+#menu li ul li {
+    display:block;
+}
+
+#menu li ul li a {
+    border-top:1px solid black;
+    margin: 0;
+    width: 100%;
 }
 
 .currentPage {
     border: 3px solid black;
 }
 
-#content {
+#leftContent {
     text-align:left;
+}
+#centerContent {
+    text-align:center;
 }

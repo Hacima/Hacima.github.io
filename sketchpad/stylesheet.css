@@ -17,11 +17,14 @@ html {
 
 #menu {
     text-align: center;
-    margin-right: 28px;
+}
+
+#menu ul {
+    padding: 0;
+    list-style: none;
 }
 
 #menu li {
-    list-style-type: none;
     display: inline-block;
 }
 

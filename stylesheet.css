@@ -18,16 +18,20 @@ li {
 }
 
 #menu {
+    margin: 0;
     text-align: center;
-    margin: 20px 0 20px 0;
 }
 
-#menu li {
-    list-style-type: none;
+#menu ul {
+    list-style: none;
+    padding:0;
+}
+
+#menu ul li {
     display: inline-block;
 }
 
-#menu li a {
+#menu ul li a {
     display: inline-block;
     text-decoration: none;
     color:#ffffff;
@@ -36,7 +40,7 @@ li {
     padding:4px;
 }
 
-#menu li a:hover {
+#menu ul li a:hover {
     background-color:#a1a1a1;
 }
 
@@ -46,11 +50,11 @@ li {
     visibility: hidden;
 }
 
-#menu li ul li {
+#menu ul li ul li {
     display:block;
 }
 
-#menu li ul li a {
+#menu ul li ul li a {
     border-top:1px solid black;
     margin: 0;
     width: 100%;

@@ -38,6 +38,10 @@ body {
     background-color:#a1a1a1;
 }
 
+.currentPage {
+    border: 3px solid black;
+}
+
 #content {
     text-align:left;
 }

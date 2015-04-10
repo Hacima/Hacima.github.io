@@ -1,0 +1,43 @@
+body {
+    margin:auto;
+    width:900px;
+    font-family: monospace;
+}
+
+#wrap {
+    margin:0;
+}
+
+#title {
+    margin:10px 0 0 0;
+    text-align:center;
+}
+
+#menu {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color:#ffffff;
+    background-color:rgb(74, 74, 74);
+    margin:0px 4px 4px 4px;
+    padding:4px;
+}
+
+#menu ul li a:hover {
+    background-color:#a1a1a1;
+}
+
+#content {
+    text-align:left;
+}

@@ -13,6 +13,10 @@ body {
     text-align:center;
 }
 
+li {
+    list-style-type: none;
+}
+
 #menu {
     text-align: center;
     margin: 20px 0 20px 0;

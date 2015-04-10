@@ -4,6 +4,7 @@
 <title>Contact</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dropdown.js"></script>
     <meta name="description" content="Micah Obal earned his associates in computer science from TCC, has over 4 years of programming experience, and over 7 years working as a private musical instructor. He has produced websites for a local business, the Butler Music School and a local symphonic rock band, Serafem.">
 </head>
 <body>
@@ -13,7 +14,12 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html" class="currentPage">About Me</a></li>
-                <li><a href="/programs.html">Programs and Fiddles</a></li>
+                <li class="dropDown"><a href="/programs.html">Programs and Fiddles</a>
+                    <ul class="subMenu">
+                        <li><a href="/scale.html">Scale Calculator</a></li>
+                        <li><a href="/sketchpad">Sketchpad</a></li>
+                    </ul>
+                </li>
                 <li><a href="/contact.html">Contact</a></li>
                 <li><a href="/links.html">Other Links</a></li>
             </ul>

@@ -4,16 +4,22 @@
 <title>Contact</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dropdown.js"></script>
     <meta name="description" content="Try out some of my very basic programs, poke around in the source code and get an idea of my programming style.">
 </head>
 <body>
     <div id="wrap">
-        <h1 id="title">Contact Me</h1>
+        <h1 id="title">Micah Obal - Programs and Fiddles</h1>
         <div id="menu">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html">About Me</a></li>
-                <li><a href="/programs.html" class="currentPage">Programs and Fiddles</a></li>
+                <li class="dropDown"><a href="/programs.html" class="currentPage">Programs and Fiddles</a>
+                    <ul class="subMenu">
+                        <li><a href="/scale.html">Scale Calculator</a></li>
+                        <li><a href="/sketchpad">Sketchpad</a></li>
+                    </ul>
+                </li>
                 <li><a href="/contact.html">Contact</a></li>
                 <li><a href="/links.html">Other Links</a></li>
             </ul>

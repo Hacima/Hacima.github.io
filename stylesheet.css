@@ -67,6 +67,11 @@ li {
 #leftContent {
     text-align:left;
 }
+
 #centerContent {
     text-align:center;
+}
+
+#centerContent ul {
+    padding:0;
 }

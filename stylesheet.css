@@ -87,6 +87,17 @@ li {
     border: 1px solid grey;
 }
 
+.ss-logo-container{
+    width:110px;
+}
+.ss-footer{
+    width:110px;
+    margin:auto;
+}
+.ss-navigate input{
+    margin:20px 400px 0 420px;
+}
+
 .ss-q-title{
     text-align: center;
 }

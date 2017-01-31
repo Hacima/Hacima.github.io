@@ -1,0 +1,138 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 950px;
+    margin: -12px auto 0 auto;
+    font-family: serif;
+}
+
+#title {
+    text-align: center;
+    font-family: monospace;
+}
+
+#menu {
+    text-align: center;
+    font-family: monospace;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color:#ffffff;
+    background-color:rgb(74, 74, 74);
+    padding:4px;
+}
+
+#menu ul li a:hover {
+    background-color:#a1a1a1;
+}
+
+.subMenu {
+    position:absolute;
+    padding: 0;
+    visibility: hidden;
+}
+
+#menu ul li ul li {
+    display:block;
+}
+
+#menu ul li ul li a {
+    border-top:1px solid black;
+    margin: 0;
+    width: 100%;
+}
+
+.currentPage {
+    border: 3px solid black;
+}
+
+#calculator {
+    text-align: center;
+    width: 950px;
+    margin-top:30px;
+}
+
+select {
+    height: 25px;
+}
+
+#submitButton {
+    margin-top: 10px;
+}
+
+#listWrap {
+    margin: 0px auto;
+    margin-top: 25px;
+    width: 340px;
+    text-align: center;
+    height: 150px;
+}
+
+#listTitles {
+    display:inline;
+    float:left;
+    width:300px;
+    text-align: right;
+    margin-top: 25px;
+    height: 150px;
+}
+
+#listTitles p {
+    margin:0;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.noteList {
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    text-align: center;
+}
+
+.noteList div {
+    display: inline-block;
+    line-height: 1.5;
+    width: 42px;
+    box-sizing: border-box;
+}
+
+.steps {
+    font-size: .7em;
+}
+
+.rootNotes {
+    font-weight: 600;
+}
+
+.chordTones:first-child {
+    border-left: 1px solid grey;
+}
+
+.chordTones {
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+#fifths .chordTones {
+    border-bottom: 1px solid grey;
+}
+
+.chords {
+    height:25px;
+    font-size: .6em;
+}

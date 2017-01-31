@@ -1,36 +1,46 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-    <title>Micah Obal - Musician, Web Developer, Programmer</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="dropdown.js"></script>
-    <script src="pong.js"></script>
-    <meta name="description" content="Micah Obal is a web designer, programmer, and private music instructor from Tulsa, Oklahoma. He has experience with basic web development technologies like HTML, CSS, JavaScript, jQuery, etc. His programming experience consists of intermediate C++ and Java.">
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
 </head>
+
 <body>
     <div id="wrap">
-        <h1 id="title">Micah Obal </h1>
-        <h2 id="subtitle">Musician • Web Developer • Programmer</h2>
-        <div id="menu">
-            <ul>
-                <li><a href="/" class="currentPage">Home</a></li>
-                <li><a href="/about.html">About Me</a></li>
-                <li class="dropDown"><a href="/programs.html">Programs and Fiddles</a>
-                    <ul class="subMenu">
-                        <li><a href="/scalecalculator">Scale Calculator</a></li>
-                        <li><a href="/sketchpad">Sketchpad</a></li>
-                        <li><a href="/websites.html">Websites</a></li>
-                    </ul>
-                </li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/links.html">Other Links</a></li>
-            </ul>
+        
+        <div id="header">
         </div>
-        <div id="leftContent">
-            <p>Welcome to my homepage! Feel free to poke around, check out the source code, even critique it or make suggestions! I am a new developer and always looking to improve the quality, readability and functionality of my code.</p>
-            <p>If you'd like to see some examples of my programming, you can either check out my github account <a href="https://github.com/Hacima">here</a> or click on the 'programs and fiddles' button above. Thank you for visiting my website!</p>
+        
+        <div class="title">
+            <a class="selected" href="index.html">Home</a>
+            <a href="rates.html">Rates</a>
+            <a href="policy.html">Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="homeContentWrap">
+            <div class="flexContentContainer">
+                <img id="micahImg" src="MicahGuitarMedium.jpg" />
+            </div>
+            
+            <div class="contentContainer">
+                <p class="content home">My name is Micah Obal, I am a musician and private instructor. I've been offering guitar, bass and piano lessons in Tulsa for more than a decade. I also play in a symphonic rock band, record at my home studio, lead worship at my church, and even do a little programming in my spare time. Teaching, however, is my primary focus.</p>
+            </div>
+
+            <div class="contentContainer">
+                <p class="content">
+                    I teach weekly 30, 45 and 60-minute lessons on guitar, piano and bass. My students range from 10 years old to over 60, from beginners to advanced. Some want to learn country guitar, others classical piano, and others funk bass. I do my best to make sure each and every one of them learn material that furthers their own goals without neglecting technique or good musicianship.
+                </p>
+            </div>
+
+            <div class="contentContainer home">
+                <p class="content">Thank you for visiting my site, and please call or text me at <b>918-200-9144</b>, or email me at <b>micah.obal.lessons@gmail.com</b> if you have any questions at all!</p>
+            </div>
+            
+            <div class="contentContainer footer">
+                <p>918-200-9144 | <a href="">micah.obal.lessons@gmail.com</a></p>
+            </div>
         </div>
     </div>
 </body>

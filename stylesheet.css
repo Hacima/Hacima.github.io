@@ -1,328 +1,143 @@
-body {
-    margin:auto;
-    width:900px;
-    font-family: monospace;
+/*  Color Palette
+    Dark Blue:   #112236
+    Blue:        #436280
+    Light Blue:  #a3bad2
+    Grey Blue:   #dbe4ed
+    White
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
-#wrap {
-    margin:0;
+html, body{
+    height: 100%;
+    /*background-color:rgb(229, 229, 229);*/
 }
 
-#title {
-    margin:10px 0 0 0;
-    text-align:center;
+a{
+    cursor: pointer;
 }
 
-#subtitle {
-    margin:0;
-    text-align:center;
-}
-
-li {
-    list-style-type: none;
-}
-
-#menu {
-    margin: 0;
-    text-align: center;
-}
-
-#menu ul {
-    list-style: none;
-    padding:0;
-}
-
-#menu ul li {
-    display: inline-block;
-}
-
-#menu ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color:#ffffff;
-    background-color:rgb(74, 74, 74);
-    padding:4px;
-}
-
-#menu ul li a:hover {
-    background-color:#a1a1a1;
-}
-
-.subMenu {
-    position:absolute;
+#wrap{
+    position: relative;
+    max-width: 1200px;
+    min-width: 550px;
+    height: 100%;
+    margin: 0px auto;
     padding: 0;
-    visibility: hidden;
+    /*background: white;*/
 }
 
-#menu ul li ul li {
-    display:block;
+#header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 190px;
+    min-width: inherit;
+    max-width: inherit;
+    margin: 0 auto;
+    padding-bottom:10px;
+    margin-top:5px;
+    /*background:white;*/
+    background: url('/images/Music.png');
+    border: 1px solid #436280);
 }
 
-#menu ul li ul li a {
-    border-top:1px solid black;
-    margin: 0;
-    width: 100%;
-}
-
-.currentPage {
-    border: 2px solid black;
-}
-
-#leftContent {
-    text-align: left;
-}
-
-#centerContent {
+.title{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #112236;
+    background-color: #436280;
+    font-family: 'Open Sans';
     text-align: center;
+    font-size: 1.2em;
 }
 
-#centerContent ul {
-    padding:0;
+.title a {
+    padding: 0px 6px;
+    text-decoration: none;
+    color: white;
 }
 
-#pong {
-    height: 200px;
-    width: 700px;
-    margin: 50px auto;
-    border: 1px solid grey;
+.title a:hover{
+    color:#7c7c7c;
 }
 
-.ss-logo-container{
-    width:110px;
+a.selected {
+    text-decoration: underline;
 }
-.ss-footer{
-    width:110px;
+
+#micahImg {
+    margin-top:10px;
+}
+
+.homeContentWrap{
+    border: 1px solid #436280;
+    margin-bottom:10px;
+}
+
+.seperator {
+    padding-top:10px;
+    width:400px;
+    border-bottom: 2px solid #436280;
     margin:auto;
-}
-.ss-navigate input{
-    margin:20px 400px 0 420px;
-}
-
-.ss-q-title{
     text-align: center;
 }
-
-.ss-item-required .ss-q-title{
-    text-align: left;
+.seperator p {
+    color: #436280;
+    max-width: 1200px;
+    font-family: 'Open Sans';
+    margin: 0px auto 0px auto;
+    padding: 10px 15px 0px 15px;
+    font-size: 1.5em
 }
 
-.ss-item-required{
-    margin-bottom: 15px;
+.contentContainer {
+    
 }
 
-.ss-form-question:first-child{
-    display: block;
+.flexContentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    max-width: 1200px;
 }
 
-.ss-form-question{
-    display: inline-block;
+.content{
+    color: #4b4b4b;
+    max-width: inherit;
+    font-family: 'Open Sans';
+    margin: 0px auto 0px auto;
+    padding: 10px 15px 10px 15px;
+    line-height: 1.6;
 }
 
-.ss-form-container, .ss-resp-card {
-  background-color: rgb(255,255,255);
+.spacer {
+    height:30px;
 }
 
-.ss-footer, .ss-response-footer {
-  background-color: rgb(255,255,255);
+.footer {
+    margin-top:50px;
+    display:flex;
 }
 
-.ss-grid-row-odd {
-  background-color: rgb(242,242,242);
+.footer p {
+    color: #4b4b4b;
+    max-width: inherit;
+    font-family: 'Open Sans';
+    margin: 0px auto 0px auto;
+    font-size: .9em;
 }
 
-.ss-form-container, .ss-resp-card {
-  border-color: rgb(212,212,212);
-}
-
-.ss-form-title {
-  text-align: left;
-}
-
-.ss-form-title[dir="rtl"] {
-  text-align: right;
-}
-
-.ss-form-desc {
-  text-align: left;
-}
-
-.ss-form-desc[dir="rtl"] {
-  text-align: right;
-}
-
-.ss-header-image-container {
-  height: 0;
-}
-
-.ss-item {
-  font-size: 1.00rem;
-}
-
-.ss-choices {
-  font-size: 1.000rem;
-}
-
-.ss-record-username-message {
-  font-family: "Roboto";
-  color: rgb(119,119,119);
-  font-weight: 400;
-  font-size: 1.080rem;
-  font-style: normal;
-}
-
-.ss-form-title {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 2.460rem;
-  font-style: normal;
-}
-
-.ss-confirmation {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 2.460rem;
-  font-style: normal;
-}
-
-.ss-page-title, .ss-section-title {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 1.845rem;
-  font-style: normal;
-}
-
-.ss-form-desc, .ss-page-description, .ss-section-description {
-  font-family: "Roboto";
-  color: rgb(140,140,140);
-  font-weight: 400;
-  font-size: 1.080rem;
-  font-style: normal;
-}
-
-.ss-resp-content {
-  font-family: "Roboto";
-  color: rgb(119,119,119);
-  font-weight: 400;
-  font-size: 1.080rem;
-  font-style: normal;
-}
-
-.ss-q-title {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 700;
-  font-size: 1.080rem;
-  font-style: normal;
-}
-
-.ss-embeddable-object-container .ss-q-title {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 700;
-  font-size: 1.845rem;
-  font-style: normal;
-}
-
-.ss-q-help, .ss-q-time-hint {
-  font-family: "Roboto";
-  color: rgb(140,140,140);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-.ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-.error-message, .required-message, .ss-required-asterisk {
-  font-family: "Roboto";
-  color: rgb(196,59,29);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-.ss-send-email-receipt {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-.ss-password-warning {
-  font-family: "Arial";
-  color: rgb(119,119,119);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: italic;
-}
-
-.disclaimer {
-  font-family: "Arial";
-  color: rgb(119,119,119);
-  font-weight: 400;
-  font-size: 0.850rem;
-  font-style: normal;
-}
-
-.ss-footer-content {
-  font-family: "Arial";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-.progress-label {
-  font-family: "Roboto";
-  color: rgb(140,140,140);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-a:link {
-  color: rgb(0,0,238);
-}
-
-a:visited {
-  color: rgb(85,26,139);
-}
-
-a:active {
-  color: rgb(252,0,0);
-}
-
-input[type='text'], input:not([type]), textarea {
-  font-size: 1.000rem;
-}
-
-.error, .required, .errorbox-bad {
-  border-color: rgb(196,59,29);
-}
-
-.jfk-progressBar-nonBlocking .progress-bar-thumb {
-  background-color: rgb(140,140,140);
-}
-
-.ss-logo-image {
-  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark.png');
-  background-size: 108px 21px;
-  width: 108px;
-  height: 21px;
-}
-
-@media screen and (-webkit-device-pixel-ratio: 2) {
-.ss-logo-image {
-  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark_2x.png');
-}
+.footer a{
+    text-decoration: none;
 }

@@ -124,6 +124,11 @@ a{
     line-height: 1.6;
 }
 
+.content a {
+    text-decoration: none;
+    color: #436280;
+}
+
 .spacer {
     height:30px;
 }
@@ -143,4 +148,5 @@ a{
 
 .footer a{
     text-decoration: none;
+    color: #436280;
 }

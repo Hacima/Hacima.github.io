@@ -50,8 +50,10 @@ a{
 }
 
 .title{
+    height:40px;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
+    align-items:center;
     border: 1px solid #112236;
     background-color: #436280;
     font-family: 'Open Sans';
@@ -60,7 +62,8 @@ a{
 }
 
 .title a {
-    padding: 0px 6px;
+    padding: 0px 10px;
+    margin: 0px 10px;
     text-decoration: none;
     color: white;
 }
@@ -69,8 +72,8 @@ a{
     color:#7c7c7c;
 }
 
-a.selected {
-    text-decoration: underline;
+.title a.selected {
+    text-decoration: overline;
 }
 
 #micahImg {
